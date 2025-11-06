@@ -44,15 +44,16 @@ hernancardenasposada/MMPC14-1_SCIENTIFIC_PROGRAM
 |   |
 |   └── 2_Second_Lab.ipynb
 |
-├── Figures
-|   |
-|   └── data_64AQM_SNR_20_level110.csv
-|
-├── rerults_AQM
-|
-├── .gitignore
-|
-└── requirements.md
+└── Images
+    |
+    |
+    ├── 1_PTW.png
+    |
+    ├── 2_Reference indicator for temperature 1560 SPRT.png
+    |
+    ├── 3_Probe 5626 SPRT.png
+    |
+    └── 4_ESP32.png
 
 ```
 
@@ -62,7 +63,13 @@ The work describes the calibration facilities, the procedure, the uncertainty an
 
  The objective is to develop a standard prototype for temperature calibration at 0 °C using an ESP32 microcontroller and a specific sensor that supports calibrations with the water triple point device. Once the measurement system has been obtained, we must perform stability, repeatability, and validation tests with all sources of uncertainty associated with the process.
 
+ ![Reference Indicator](Images/2_Reference indicator for temperature 1560 SPRT.png)
 
+![Reference Indicator](Images/2_Reference indicator for temperature 1560 SPRT.png)
+
+![SPRT_Probe_5626](Images/3_Probe 5626 SPRT.png)
+
+![ESP32_Prototype](Images/4_ESP32.png)
 # 4. Data Structure
 
 Data loading and initial visualization:
@@ -72,6 +79,10 @@ Data loading and initial visualization:
 *  *Day:* day of measurement.
 *  *Time:* time at which the measurement was taken.
 *  *Triplepointw:* measuring device used, in which 0 °C is guaranteed.
+
+ ![PTW](Images/1_PTW.png)
+Figure 1 Triple point water (TPW) device
+
 *  *SprtTemperature:* reference prototype implemented with an SPRT (standard platinum resistance thermometer) sensor.
 *  *ReferenceTemperature:* reference thermometer used for direct comparison.
 *  *SprtOhms:* values taken by the SPRT transducer in ohms.

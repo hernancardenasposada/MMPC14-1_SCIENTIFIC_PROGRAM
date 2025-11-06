@@ -64,6 +64,7 @@ The work describes the calibration facilities, the procedure, the uncertainty an
  The objective is to develop a standard prototype for temperature calibration at 0 °C using an ESP32 microcontroller and a specific sensor that supports calibrations with the water triple point device. Once the measurement system has been obtained, we must perform stability, repeatability, and validation tests with all sources of uncertainty associated with the process.
 
  ![ESP32_Prototype](Images/4_ESP32.png)
+ 
  Figure 1 ESP32 device
 
 # 4. Data Structure
@@ -77,6 +78,7 @@ Data loading and initial visualization:
 *  *Triplepointw:* measuring device used, in which 0 °C is guaranteed.
 
  ![PTW](Images/1_PTW.png)
+
 Figure 2 Triple point water (TPW) device
 
 *  *SprtTemperature:* reference prototype implemented with an SPRT (standard platinum resistance thermometer) sensor.

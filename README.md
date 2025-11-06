@@ -63,13 +63,9 @@ The work describes the calibration facilities, the procedure, the uncertainty an
 
  The objective is to develop a standard prototype for temperature calibration at 0 °C using an ESP32 microcontroller and a specific sensor that supports calibrations with the water triple point device. Once the measurement system has been obtained, we must perform stability, repeatability, and validation tests with all sources of uncertainty associated with the process.
 
- ![Reference Indicator](Images/2_Reference indicator for temperature 1560 SPRT.png)
+ ![ESP32_Prototype](Images/4_ESP32.png)
+ Figure 1 ESP32 device
 
-![Reference Indicator](Images/2_Reference indicator for temperature 1560 SPRT.png)
-
-![SPRT_Probe_5626](Images/3_Probe 5626 SPRT.png)
-
-![ESP32_Prototype](Images/4_ESP32.png)
 # 4. Data Structure
 
 Data loading and initial visualization:
@@ -81,10 +77,20 @@ Data loading and initial visualization:
 *  *Triplepointw:* measuring device used, in which 0 °C is guaranteed.
 
  ![PTW](Images/1_PTW.png)
-Figure 1 Triple point water (TPW) device
+Figure 2 Triple point water (TPW) device
 
 *  *SprtTemperature:* reference prototype implemented with an SPRT (standard platinum resistance thermometer) sensor.
+
+![SPRT_Probe_5626](Images/3_Probe%205626%20SPRT.png)
+
+Figure 3 Probe SPRT 5626 device
+
 *  *ReferenceTemperature:* reference thermometer used for direct comparison.
+
+![Reference Indicator](Images/2_Reference%20indicator%20for%20temperature%201560%20SPRT.png)
+
+Figure 4 Reference indicator for temperature 1560 SPRT
+
 *  *SprtOhms:* values taken by the SPRT transducer in ohms.
 
 A database with measurements taken during February 2025 was selected to visualize the behavior of the implemented instrument (SprtTemperature) and to obtain measurements at the triple point of water. It was also considered necessary to obtain the ohm value of the SPRT sensor (SprtOhms) and a reference instrument for direct comparison during temperature measurement (ReferenceTemperature). Since the triple point of water generates the necessary conditions to measure the 0 °C point, the above database allows the behavior of the implemented instrument (SprtTemperature) to be verified.
